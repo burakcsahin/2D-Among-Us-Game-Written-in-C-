@@ -11,7 +11,6 @@
 //to the normal output txts. If you set it to false, it disables bonus part. Use cat filename_vis.txt command to test it.
 
 
-//hope everything works well
 int N, iteration;
 int dead_astro_count, dead_imp_count;
 int astro_count, imp_count;
@@ -151,7 +150,6 @@ struct Person** parse_from_coordinates(const char* coordinates, int max_count)
     int nStrLen = (int)strlen(coordinates);
     char szBuffer[128];
 
-    //the below part is for how I tried and hopefully managed to do the part of coordinate reading stuff (e.g reading a,b & c,d & with respect to commas spaces and &s)
 
     for(int i =0; i<= nStrLen; i++){
        char ch = coordinates[i];
@@ -182,7 +180,7 @@ struct Person** parse_from_coordinates(const char* coordinates, int max_count)
 	 }	 
          
 	 //parameter setting
-	 struct Person* person = *(result + ndx); //again syntacic sugar, same ase result[ndx]
+	 struct Person* person = *(result + ndx); 
 	 if(person && (x <= nMaxX) && (y <= nMaxY)){
 	   person->is_alive = true;
 	   person->x = x;
@@ -199,7 +197,6 @@ struct Person** parse_from_coordinates(const char* coordinates, int max_count)
 
 struct People* read_from_file(const char* filename)
 {
-    //in this function I wrote every comment like it is an educational material. I did not know the file io in C, and I hope it works.
     
     if (!filename || (strlen(filename) == 0)) {
         print_error("'filename' must not be null or empty.");
@@ -586,7 +583,6 @@ void write_a_file(char* in_fname, struct People* people, int cur_iteration)
 
 void print_state(struct People* people)
 {
-	//just did the same thing with my write_to_file I changed fprintfs to printfs
 	printf("%d\n", dead_imp_count);
 	printf("%d\n", (imp_count - dead_imp_count));
 	printf("%d\n", dead_astro_count);
