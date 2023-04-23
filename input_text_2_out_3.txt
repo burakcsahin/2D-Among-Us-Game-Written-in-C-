@@ -1,0 +1,8 @@
+0
+4
+3
+3
+Continue
+3, 6, Dead & 3, 9, Alive & 6, 10, Dead & 8, 5, Dead & 10, 7, Alive & 12, 3, Alive
+3, 6, Alive & 6, 10, Alive & 8, 5, Alive & 10, 6, Alive
+

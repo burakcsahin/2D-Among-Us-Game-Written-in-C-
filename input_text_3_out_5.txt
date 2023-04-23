@@ -1,0 +1,8 @@
+1
+3
+5
+0
+Defeat
+3, 6, Dead & 3, 6, Dead & 8, 5, Dead & 11, 6, Dead & 10, 6, Dead
+3, 6, Alive & 8, 5, Alive & 10, 6, Alive & 11, 6, Dead
+
